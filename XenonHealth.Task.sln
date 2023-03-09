@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33214.272
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XenonHealth.Task", "XenonHealth.Task.csproj", "{4FE87AA3-0C99-4057-87D3-E55FF91A470D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4FE87AA3-0C99-4057-87D3-E55FF91A470D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FE87AA3-0C99-4057-87D3-E55FF91A470D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FE87AA3-0C99-4057-87D3-E55FF91A470D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FE87AA3-0C99-4057-87D3-E55FF91A470D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {90D4F6A4-D0EE-4437-AE1C-5525D07AF151}
+	EndGlobalSection
+EndGlobal

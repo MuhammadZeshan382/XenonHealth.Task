@@ -1,0 +1,40 @@
+﻿@model List<ImageModel>
+@if (Model.Count == 0)
+{
+    <div class="alert alert-primary" role="alert">
+        No Record Found Please Upload Images!
+    </div>
+}
+else
+{
+    <div class="row justify-content-center">
+        <div class="col-auto">
+            <table class="table table-responsive">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Id</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Type</th>
+                        <th scope="col">Created Date</th>
+                        <th scope="col">Image</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @for (int i = 0; i < Model.Count; i++)
+                    {
+                        <tr>
+                            <td>@i</td>
+                            <td>@Model[i].Id</td>
+                            <td>@Model[i].ImageName</td>
+                            <td>@Model[i].ImageExtension</td>
+                            <td>@Model[i].CreateDate</td>
+                            <td><a class="btn btn-info" asp-controller="Image" asp-action="ViewImage" asp-route-id="@Model[i]?.Id">View</a></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+}

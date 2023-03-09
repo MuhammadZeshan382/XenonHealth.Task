@@ -1,0 +1,12 @@
+﻿@model ImageModel
+<div class="row justify-content-center">
+    <div class="col-auto">
+        <figure class="figure">
+            @{
+                var src = $"data:image/{Model.ImageExtension?.Replace(".", string.Empty)};base64,{Convert.ToBase64String(Model.ImageData)}";
+            }
+            <img class="img-fluid" src="@src" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+            <figcaption class="figure-caption">@Model.ImageName</figcaption>
+        </figure>
+    </div>
+</div>
